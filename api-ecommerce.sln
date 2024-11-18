@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "api-ecommerce", "api-ecommerce\api-ecommerce.csproj", "{9A822C40-307D-4C51-B10E-4867A37BF023}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A822C40-307D-4C51-B10E-4867A37BF023}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A822C40-307D-4C51-B10E-4867A37BF023}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A822C40-307D-4C51-B10E-4867A37BF023}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A822C40-307D-4C51-B10E-4867A37BF023}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
