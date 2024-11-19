@@ -5,4 +5,5 @@ namespace api_ecommerce.Application.Interfaces;
 public interface ICustomerService
 {
     Customer CreateCustomer(string name);
+    List<Customer> GetAllCustomers();
 }

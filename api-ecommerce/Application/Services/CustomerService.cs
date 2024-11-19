@@ -18,4 +18,9 @@ public class CustomerService(AppDbContext dbContext) : ICustomerService
         dbContext.SaveChanges();
         return customer;
     }
+    
+    public List<Customer> GetAllCustomers()
+    {
+        return dbContext.Customers.ToList();
+    }
 }

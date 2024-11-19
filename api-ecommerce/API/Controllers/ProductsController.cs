@@ -21,7 +21,7 @@ public class ProductsController(IProductService productService) : ControllerBase
         var result = productService.ReserveProduct(productId, customerId);
         if (result) return Ok("Produto reservado com sucesso!");
         
-        return BadRequest("Erro ao reservar o produto. Verifique a requisição e tente novamente.");
+        return BadRequest("Erro ao reservar o produto. Verifique se sua requisição está correta.");
     }
 
     [HttpPost]
