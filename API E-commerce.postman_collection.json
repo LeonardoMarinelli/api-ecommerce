@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "b3c42808-3a7c-4d49-9fb3-cdbd7e2f195d",
+		"name": "API E-commerce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32405115"
+	},
+	"item": [
+		{
+			"name": "PRODUTOS",
+			"item": [
+				{
+					"name": "CRIAR PRODUTOS",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Urna Semente do Império de Kakin\",\r\n    \"status\": \"Available\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5099/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5099",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LISTAR PRODUTOS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5099/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5099",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RESERVAR PRODUTOS",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5099/products/618b9a22-95cb-4c1c-b881-647d04d79208/reserve/9d30e9bc-3fdf-49ff-b746-baab54f5c39f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5099",
+							"path": [
+								"products",
+								"618b9a22-95cb-4c1c-b881-647d04d79208",
+								"reserve",
+								"9d30e9bc-3fdf-49ff-b746-baab54f5c39f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LISTAR PRODUTOS POR USUÁRIO",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5099/customer/357eb3aa-bbb5-4191-ad2e-1b91d9e74e40/reservations",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5099",
+							"path": [
+								"customer",
+								"357eb3aa-bbb5-4191-ad2e-1b91d9e74e40",
+								"reservations"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "USUÁRIOS",
+			"item": [
+				{
+					"name": "CRIAR USUÁRIO",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Meruem\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5099/customer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5099",
+							"path": [
+								"customer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LISTAR USUÁRIOS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5099/customer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5099",
+							"path": [
+								"customer"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
